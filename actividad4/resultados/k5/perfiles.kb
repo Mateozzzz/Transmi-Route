@@ -1,0 +1,84 @@
+% Perfiles de uso de las estaciones descubiertos con k-medias (Actividad 4, datos reales de TRANSMILENIO).
+% Generado con: python -m actividad4 agrupar -k 5
+% Se puede cargar junto con conocimiento/hechos.kb y conocimiento/reglas.kb.
+
+perfil_estacion("7 de Agosto", "empleo_1").
+perfil_estacion("Alcalá", "empleo_1").
+perfil_estacion("Américas - Av. Boyacá", "residencial").
+perfil_estacion("Av. 39", "empleo_2").
+perfil_estacion("Av. 68", "empleo_1").
+perfil_estacion("Av. Boyacá", "ocio_fin_de_semana").
+perfil_estacion("Av. Chile", "empleo_2").
+perfil_estacion("Av. Ciudad de Cali", "residencial").
+perfil_estacion("Av. El Dorado", "empleo_1").
+perfil_estacion("Av. Jiménez", "ocio_fin_de_semana").
+perfil_estacion("Av. Rojas", "empleo_1").
+perfil_estacion("Banderas", "residencial_alta_demanda").
+perfil_estacion("Biblioteca Tintal", "residencial_alta_demanda").
+perfil_estacion("CAD", "ocio_fin_de_semana").
+perfil_estacion("CAN", "empleo_2").
+perfil_estacion("CDS - Carrera 32", "empleo_1").
+perfil_estacion("Calle 100", "empleo_2").
+perfil_estacion("Calle 106", "empleo_2").
+perfil_estacion("Calle 127", "empleo_2").
+perfil_estacion("Calle 142", "residencial").
+perfil_estacion("Calle 146", "residencial").
+perfil_estacion("Calle 161", "empleo_1").
+perfil_estacion("Calle 22", "ocio_fin_de_semana").
+perfil_estacion("Calle 26", "empleo_2").
+perfil_estacion("Calle 34", "empleo_2").
+perfil_estacion("Calle 45", "empleo_1").
+perfil_estacion("Calle 57", "empleo_1").
+perfil_estacion("Calle 76", "empleo_2").
+perfil_estacion("Calle 85", "empleo_2").
+perfil_estacion("Campín", "ocio_fin_de_semana").
+perfil_estacion("Carrera 43", "empleo_1").
+perfil_estacion("Carrera 47", "empleo_1").
+perfil_estacion("Carrera 53", "empleo_1").
+perfil_estacion("Carrera 90", "residencial").
+perfil_estacion("Centro Memoria", "empleo_1").
+perfil_estacion("Ciudad Universitaria", "empleo_1").
+perfil_estacion("Concejo de Bogotá", "empleo_1").
+perfil_estacion("Corferias", "ocio_fin_de_semana").
+perfil_estacion("De La Sabana", "ocio_fin_de_semana").
+perfil_estacion("Distrito Grafiti", "empleo_1").
+perfil_estacion("El Tiempo - Maloka", "empleo_2").
+perfil_estacion("Escuela Militar", "empleo_1").
+perfil_estacion("Ferias", "empleo_1").
+perfil_estacion("Flores", "empleo_2").
+perfil_estacion("Gobernación", "empleo_2").
+perfil_estacion("Granja - Carrera 77", "residencial").
+perfil_estacion("Héroes", "empleo_2").
+perfil_estacion("La Castellana", "empleo_2").
+perfil_estacion("Las Aguas", "ocio_fin_de_semana").
+perfil_estacion("Mandalay", "residencial").
+perfil_estacion("Marly", "empleo_1").
+perfil_estacion("Marsella", "residencial").
+perfil_estacion("Mazurén", "residencial").
+perfil_estacion("Minuto de Dios", "residencial").
+perfil_estacion("Modelia", "empleo_1").
+perfil_estacion("Movistar Arena", "ocio_fin_de_semana").
+perfil_estacion("Museo del Oro", "empleo_2").
+perfil_estacion("NQS Calle 75", "empleo_2").
+perfil_estacion("Normandía", "empleo_1").
+perfil_estacion("Paloquemao", "ocio_fin_de_semana").
+perfil_estacion("Pepe Sierra", "empleo_2").
+perfil_estacion("Polo", "empleo_1").
+perfil_estacion("Portal 80", "residencial_alta_demanda").
+perfil_estacion("Portal Américas", "residencial_alta_demanda").
+perfil_estacion("Portal El Dorado", "residencial_alta_demanda").
+perfil_estacion("Portal Norte", "residencial_alta_demanda").
+perfil_estacion("Pradera", "ocio_fin_de_semana").
+perfil_estacion("Prado", "empleo_1").
+perfil_estacion("Puente Aranda", "empleo_1").
+perfil_estacion("Quinta Paredes", "empleo_1").
+perfil_estacion("Quirigua", "residencial").
+perfil_estacion("Ricaurte", "ocio_fin_de_semana").
+perfil_estacion("Salitre - El Greco", "ocio_fin_de_semana").
+perfil_estacion("San Façón - Carrera 22", "ocio_fin_de_semana").
+perfil_estacion("Toberín", "residencial").
+perfil_estacion("Transversal 86", "residencial").
+perfil_estacion("U. Nacional", "empleo_1").
+perfil_estacion("Universidades", "empleo_1").
+perfil_estacion("Virrey", "empleo_2").
+perfil_estacion("Zona Industrial", "empleo_1").

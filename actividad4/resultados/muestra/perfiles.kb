@@ -1,0 +1,89 @@
+% Perfiles de uso de las estaciones descubiertos con k-medias (Actividad 4, muestra sintética).
+% Generado con: python -m actividad4 agrupar -k 5 --datos muestra
+% Se puede cargar junto con conocimiento/hechos.kb y conocimiento/reglas.kb.
+
+perfil_estacion("7 de Agosto", "mixta").
+perfil_estacion("Alcalá", "residencial").
+perfil_estacion("Américas - Av. Boyacá", "mixta").
+perfil_estacion("Av. 39", "mixta").
+perfil_estacion("Av. 68", "residencial").
+perfil_estacion("Av. Boyacá", "residencial").
+perfil_estacion("Av. Chile", "mixta").
+perfil_estacion("Av. Ciudad de Cali", "residencial").
+perfil_estacion("Av. El Dorado", "empleo").
+perfil_estacion("Av. Jiménez", "empleo").
+perfil_estacion("Av. Rojas", "residencial").
+perfil_estacion("Banderas", "residencial").
+perfil_estacion("Biblioteca Tintal", "residencial").
+perfil_estacion("CAD", "empleo").
+perfil_estacion("CAN", "empleo").
+perfil_estacion("CDS - Carrera 32", "residencial").
+perfil_estacion("Calle 100", "empleo").
+perfil_estacion("Calle 106", "residencial").
+perfil_estacion("Calle 127", "residencial").
+perfil_estacion("Calle 142", "residencial").
+perfil_estacion("Calle 146", "residencial").
+perfil_estacion("Calle 161", "residencial").
+perfil_estacion("Calle 19", "empleo").
+perfil_estacion("Calle 22", "empleo").
+perfil_estacion("Calle 26", "empleo").
+perfil_estacion("Calle 34", "mixta").
+perfil_estacion("Calle 45", "ocio_fin_de_semana").
+perfil_estacion("Calle 57", "mixta").
+perfil_estacion("Calle 63", "mixta").
+perfil_estacion("Calle 72", "empleo").
+perfil_estacion("Calle 76", "empleo").
+perfil_estacion("Calle 85", "empleo").
+perfil_estacion("Campín", "ocio_fin_de_semana").
+perfil_estacion("Carrera 43", "mixta").
+perfil_estacion("Carrera 47", "residencial").
+perfil_estacion("Carrera 53", "residencial").
+perfil_estacion("Carrera 90", "residencial").
+perfil_estacion("Centro Memoria", "mixta").
+perfil_estacion("Ciudad Universitaria", "ocio_fin_de_semana").
+perfil_estacion("Concejo de Bogotá", "mixta").
+perfil_estacion("Corferias", "ocio_fin_de_semana").
+perfil_estacion("De La Sabana", "mixta").
+perfil_estacion("Distrito Grafiti", "mixta").
+perfil_estacion("El Tiempo - Maloka", "empleo").
+perfil_estacion("Escuela Militar", "residencial").
+perfil_estacion("Ferias", "residencial").
+perfil_estacion("Flores", "residencial").
+perfil_estacion("Gobernación", "empleo").
+perfil_estacion("Granja - Carrera 77", "residencial").
+perfil_estacion("Héroes", "empleo").
+perfil_estacion("La Castellana", "residencial").
+perfil_estacion("Las Aguas", "ocio_fin_de_semana").
+perfil_estacion("Mandalay", "mixta").
+perfil_estacion("Marly", "ocio_fin_de_semana").
+perfil_estacion("Marsella", "mixta").
+perfil_estacion("Mazurén", "residencial").
+perfil_estacion("Minuto de Dios", "residencial").
+perfil_estacion("Modelia", "residencial").
+perfil_estacion("Movistar Arena", "ocio_fin_de_semana").
+perfil_estacion("Museo del Oro", "empleo").
+perfil_estacion("NQS Calle 75", "mixta").
+perfil_estacion("Normandía", "residencial").
+perfil_estacion("Paloquemao", "empleo").
+perfil_estacion("Patio Bonito", "residencial").
+perfil_estacion("Pepe Sierra", "residencial").
+perfil_estacion("Polo", "residencial").
+perfil_estacion("Portal 80", "residencial_alta_demanda").
+perfil_estacion("Portal Américas", "residencial_alta_demanda").
+perfil_estacion("Portal El Dorado", "residencial_alta_demanda").
+perfil_estacion("Portal Norte", "residencial_alta_demanda").
+perfil_estacion("Pradera", "mixta").
+perfil_estacion("Prado", "residencial").
+perfil_estacion("Puente Aranda", "empleo").
+perfil_estacion("Quinta Paredes", "mixta").
+perfil_estacion("Quirigua", "residencial").
+perfil_estacion("Ricaurte", "residencial_alta_demanda").
+perfil_estacion("Salitre - El Greco", "empleo").
+perfil_estacion("San Façón - Carrera 22", "mixta").
+perfil_estacion("Tercer Milenio", "empleo").
+perfil_estacion("Toberín", "residencial").
+perfil_estacion("Transversal 86", "residencial").
+perfil_estacion("U. Nacional", "ocio_fin_de_semana").
+perfil_estacion("Universidades", "ocio_fin_de_semana").
+perfil_estacion("Virrey", "empleo").
+perfil_estacion("Zona Industrial", "empleo").

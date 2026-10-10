@@ -1,0 +1,84 @@
+% Perfiles de uso de las estaciones descubiertos con k-medias (Actividad 4, datos reales de TRANSMILENIO).
+% Generado con: python -m actividad4 agrupar -k 2
+% Se puede cargar junto con conocimiento/hechos.kb y conocimiento/reglas.kb.
+
+perfil_estacion("7 de Agosto", "empleo").
+perfil_estacion("Alcalá", "empleo").
+perfil_estacion("Américas - Av. Boyacá", "residencial").
+perfil_estacion("Av. 39", "empleo").
+perfil_estacion("Av. 68", "empleo").
+perfil_estacion("Av. Boyacá", "residencial").
+perfil_estacion("Av. Chile", "empleo").
+perfil_estacion("Av. Ciudad de Cali", "residencial").
+perfil_estacion("Av. El Dorado", "empleo").
+perfil_estacion("Av. Jiménez", "empleo").
+perfil_estacion("Av. Rojas", "empleo").
+perfil_estacion("Banderas", "residencial").
+perfil_estacion("Biblioteca Tintal", "residencial").
+perfil_estacion("CAD", "empleo").
+perfil_estacion("CAN", "empleo").
+perfil_estacion("CDS - Carrera 32", "empleo").
+perfil_estacion("Calle 100", "empleo").
+perfil_estacion("Calle 106", "empleo").
+perfil_estacion("Calle 127", "empleo").
+perfil_estacion("Calle 142", "residencial").
+perfil_estacion("Calle 146", "residencial").
+perfil_estacion("Calle 161", "empleo").
+perfil_estacion("Calle 22", "empleo").
+perfil_estacion("Calle 26", "empleo").
+perfil_estacion("Calle 34", "empleo").
+perfil_estacion("Calle 45", "empleo").
+perfil_estacion("Calle 57", "empleo").
+perfil_estacion("Calle 76", "empleo").
+perfil_estacion("Calle 85", "empleo").
+perfil_estacion("Campín", "empleo").
+perfil_estacion("Carrera 43", "empleo").
+perfil_estacion("Carrera 47", "empleo").
+perfil_estacion("Carrera 53", "empleo").
+perfil_estacion("Carrera 90", "residencial").
+perfil_estacion("Centro Memoria", "empleo").
+perfil_estacion("Ciudad Universitaria", "empleo").
+perfil_estacion("Concejo de Bogotá", "empleo").
+perfil_estacion("Corferias", "empleo").
+perfil_estacion("De La Sabana", "empleo").
+perfil_estacion("Distrito Grafiti", "empleo").
+perfil_estacion("El Tiempo - Maloka", "empleo").
+perfil_estacion("Escuela Militar", "empleo").
+perfil_estacion("Ferias", "empleo").
+perfil_estacion("Flores", "empleo").
+perfil_estacion("Gobernación", "empleo").
+perfil_estacion("Granja - Carrera 77", "residencial").
+perfil_estacion("Héroes", "empleo").
+perfil_estacion("La Castellana", "empleo").
+perfil_estacion("Las Aguas", "empleo").
+perfil_estacion("Mandalay", "residencial").
+perfil_estacion("Marly", "empleo").
+perfil_estacion("Marsella", "residencial").
+perfil_estacion("Mazurén", "residencial").
+perfil_estacion("Minuto de Dios", "residencial").
+perfil_estacion("Modelia", "empleo").
+perfil_estacion("Movistar Arena", "empleo").
+perfil_estacion("Museo del Oro", "empleo").
+perfil_estacion("NQS Calle 75", "empleo").
+perfil_estacion("Normandía", "empleo").
+perfil_estacion("Paloquemao", "empleo").
+perfil_estacion("Pepe Sierra", "empleo").
+perfil_estacion("Polo", "empleo").
+perfil_estacion("Portal 80", "residencial").
+perfil_estacion("Portal Américas", "residencial").
+perfil_estacion("Portal El Dorado", "residencial").
+perfil_estacion("Portal Norte", "residencial").
+perfil_estacion("Pradera", "empleo").
+perfil_estacion("Prado", "empleo").
+perfil_estacion("Puente Aranda", "empleo").
+perfil_estacion("Quinta Paredes", "empleo").
+perfil_estacion("Quirigua", "residencial").
+perfil_estacion("Ricaurte", "empleo").
+perfil_estacion("Salitre - El Greco", "empleo").
+perfil_estacion("San Façón - Carrera 22", "empleo").
+perfil_estacion("Toberín", "residencial").
+perfil_estacion("Transversal 86", "residencial").
+perfil_estacion("U. Nacional", "empleo").
+perfil_estacion("Universidades", "empleo").
+perfil_estacion("Virrey", "empleo").
+perfil_estacion("Zona Industrial", "empleo").

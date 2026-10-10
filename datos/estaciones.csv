@@ -1,0 +1,86 @@
+estacion,troncales,latitud,longitud,es_portal,es_integracion,num_troncales,distancia_centro_km
+7 de Agosto,E,4.658,-74.076,no,no,1,6.01
+Alcalá,B,4.719,-74.0493,no,no,1,13.16
+Américas - Av. Boyacá,F,4.624,-74.1355,no,no,1,6.8
+Av. 39,A,4.627,-74.0675,no,no,1,2.79
+Av. 68,D,4.687,-74.0925,no,no,1,9.38
+Av. Boyacá,D,4.6935,-74.101,no,no,1,10.29
+Av. Chile,E,4.666,-74.0745,no,no,1,6.9
+Av. Ciudad de Cali,D,4.704,-74.1125,no,no,1,11.78
+Av. El Dorado,E,4.6255,-74.0835,no,no,1,2.48
+Av. Jiménez,A|F|J,4.604,-74.0775,no,si,3,0.0
+Av. Rojas,K,4.6645,-74.116,no,no,1,7.97
+Banderas,F,4.6265,-74.1455,no,no,1,7.94
+Biblioteca Tintal,F,4.628,-74.158,no,no,1,9.31
+CAD,E,4.6205,-74.085,no,no,1,2.01
+CAN,K,4.649,-74.106,no,no,1,5.92
+CDS - Carrera 32,F,4.612,-74.0935,no,no,1,1.98
+Calle 100,B|E,4.6865,-74.055,no,si,2,9.51
+Calle 106,B,4.6925,-74.0535,no,no,1,10.19
+Calle 127,B,4.707,-74.0507,no,no,1,11.83
+Calle 142,B,4.725,-74.0487,no,no,1,13.83
+Calle 146,B,4.729,-74.0483,no,no,1,14.27
+Calle 161,B,4.742,-74.0471,no,no,1,15.71
+Calle 19,A,4.6085,-74.0752,no,no,1,0.56
+Calle 22,A,4.612,-74.0735,no,no,1,0.99
+Calle 26,A,4.6165,-74.0715,no,no,1,1.54
+Calle 34,A,4.6215,-74.0695,no,no,1,2.14
+Calle 45,A,4.632,-74.066,no,no,1,3.36
+Calle 57,A,4.643,-74.064,no,no,1,4.59
+Calle 63,A,4.649,-74.0628,no,no,1,5.26
+Calle 72,A,4.659,-74.0605,no,no,1,6.4
+Calle 76,A,4.663,-74.059,no,no,1,6.87
+Calle 85,B,4.672,-74.0566,no,no,1,7.91
+Campín,E,4.649,-74.078,no,no,1,5.0
+Carrera 43,F,4.616,-74.104,no,no,1,3.23
+Carrera 47,D,4.68,-74.082,no,no,1,8.47
+Carrera 53,D,4.683,-74.087,no,no,1,8.85
+Carrera 90,D,4.707,-74.116,no,no,1,12.22
+Centro Memoria,K,4.6195,-74.077,no,no,1,1.72
+Ciudad Universitaria,K,4.6315,-74.091,no,no,1,3.4
+Concejo de Bogotá,K,4.627,-74.086,no,no,1,2.73
+Corferias,K,4.6355,-74.095,no,no,1,4.0
+De La Sabana,F,4.6065,-74.081,no,no,1,0.48
+Distrito Grafiti,F,4.6195,-74.116,no,no,1,4.6
+El Tiempo - Maloka,K,4.66,-74.113,no,no,1,7.37
+Escuela Militar,D|E,4.6765,-74.076,no,si,2,8.06
+Ferias,D,4.6905,-74.0975,no,no,1,9.87
+Flores,A,4.6545,-74.0615,no,no,1,5.89
+Gobernación,K,4.644,-74.1025,no,no,1,5.24
+Granja - Carrera 77,D,4.699,-74.1075,no,no,1,11.07
+Héroes,A|B|D,4.6665,-74.0575,no,si,3,7.29
+La Castellana,E,4.6815,-74.064,no,no,1,8.75
+Las Aguas,J,4.6025,-74.068,no,si,1,1.07
+Mandalay,F,4.6255,-74.1405,no,no,1,7.38
+Marly,A,4.637,-74.065,no,no,1,3.92
+Marsella,F,4.6225,-74.13,no,no,1,6.17
+Mazurén,B,4.734,-74.0478,no,no,1,14.83
+Minuto de Dios,D,4.696,-74.104,no,no,1,10.64
+Modelia,K,4.673,-74.1215,no,no,1,9.09
+Movistar Arena,E,4.6535,-74.077,no,no,1,5.5
+Museo del Oro,J,4.602,-74.0725,no,no,1,0.6
+NQS Calle 75,E,4.669,-74.0735,no,no,1,7.24
+Normandía,K,4.669,-74.119,no,no,1,8.57
+Paloquemao,E,4.615,-74.087,no,no,1,1.61
+Patio Bonito,F,4.6285,-74.164,no,no,1,9.97
+Pepe Sierra,B,4.6985,-74.052,no,no,1,10.88
+Polo,D,4.6725,-74.0705,no,no,1,7.66
+Portal 80,D,4.7125,-74.1225,si,no,1,13.05
+Portal Américas,F,4.629,-74.172,si,no,1,10.84
+Portal El Dorado,K,4.677,-74.124,si,no,1,9.62
+Portal Norte,B,4.7546,-74.046,si,no,1,17.11
+Pradera,F,4.621,-74.1225,no,no,1,5.33
+Prado,B,4.713,-74.05,no,no,1,12.5
+Puente Aranda,F,4.618,-74.11,no,no,1,3.92
+Quinta Paredes,K,4.6395,-74.0985,no,no,1,4.58
+Quirigua,D,4.71,-74.1195,no,no,1,12.67
+Ricaurte,E|F,4.6105,-74.089,no,si,2,1.47
+Salitre - El Greco,K,4.6555,-74.11,no,no,1,6.77
+San Façón - Carrera 22,F,4.6085,-74.085,no,no,1,0.97
+Tercer Milenio,A,4.5975,-74.0805,no,no,1,0.8
+Toberín,B,4.7465,-74.0467,no,no,1,16.21
+Transversal 86,F,4.6275,-74.1525,no,no,1,8.71
+U. Nacional,E,4.6395,-74.08,no,no,1,3.96
+Universidades,K,4.6055,-74.0665,no,si,1,1.23
+Virrey,B,4.676,-74.056,no,no,1,8.35
+Zona Industrial,F,4.614,-74.099,no,no,1,2.63

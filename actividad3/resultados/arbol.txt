@@ -1,0 +1,662 @@
+(raíz) n=29792  ->  bajo 50%
+├── franja = madrugada  [bajo (87%, n=3157)]
+│   ├── longitud ≤ -74.122  [bajo (42%, n=408)]
+│   │   ├── distancia_centro_km ≤ 7.66  [bajo (81%, n=160)]
+│   │   │   ├── hora ≤ 4.5: bajo (100%, n=77)
+│   │   │   └── hora > 4.5  [bajo (64%, n=83)]
+│   │   │       ├── distancia_centro_km ≤ 5.75: bajo (100%, n=22)
+│   │   │       └── distancia_centro_km > 5.75  [bajo (51%, n=61)]
+│   │   │           ├── distancia_centro_km ≤ 6.485: medio (70%, n=23)
+│   │   │           └── distancia_centro_km > 6.485: bajo (63%, n=38)
+│   │   └── distancia_centro_km > 7.66  [alto (54%, n=248)]
+│   │       ├── hora ≤ 4.5  [medio (47%, n=126)]
+│   │       │   ├── longitud ≤ -74.165: alto (100%, n=22)
+│   │       │   └── longitud > -74.165  [medio (57%, n=104)]
+│   │       │       ├── distancia_centro_km ≤ 9.01: bajo (51%, n=41)
+│   │       │       └── distancia_centro_km > 9.01: medio (76%, n=63)
+│   │       └── hora > 4.5: alto (82%, n=122)
+│   └── longitud > -74.122  [bajo (94%, n=2749)]
+│       ├── distancia_centro_km ≤ 10.975: bajo (99%, n=2234)
+│       └── distancia_centro_km > 10.975  [bajo (71%, n=515)]
+│           ├── hora ≤ 4.5: bajo (95%, n=263)
+│           └── hora > 4.5  [bajo (46%, n=252)]
+│               ├── distancia_centro_km ≤ 15.96  [bajo (53%, n=211)]
+│               │   ├── tipo_dia = domingo_festivo: bajo (100%, n=42)
+│               │   ├── tipo_dia = habil  [medio (65%, n=144)]
+│               │   │   ├── distancia_centro_km ≤ 11.805: medio (92%, n=25)
+│               │   │   └── distancia_centro_km > 11.805  [medio (60%, n=119)]
+│               │   │       ├── distancia_centro_km ≤ 14.05  [medio (73%, n=73)]
+│               │   │       │   ├── latitud ≤ 4.7115: bajo (56%, n=36)
+│               │   │       │   └── latitud > 4.7115: medio (100%, n=37)
+│               │   │       └── distancia_centro_km > 14.05: bajo (61%, n=46)
+│               │   └── tipo_dia = sabado: bajo (88%, n=25)
+│               └── distancia_centro_km > 15.96: alto (83%, n=41)
+├── franja = noche  [bajo (83%, n=4723)]
+│   ├── hora ≤ 21.5  [bajo (75%, n=3158)]
+│   │   ├── tipo_dia = domingo_festivo  [bajo (97%, n=574)]
+│   │   │   ├── es_portal = no: bajo (99%, n=551)
+│   │   │   └── es_portal = si: medio (61%, n=23)
+│   │   ├── tipo_dia = habil  [bajo (68%, n=2133)]
+│   │   │   ├── longitud ≤ -74.07  [bajo (79%, n=1464)]
+│   │   │   │   ├── es_portal = no  [bajo (82%, n=1380)]
+│   │   │   │   │   ├── hora ≤ 20.5  [bajo (74%, n=686)]
+│   │   │   │   │   │   ├── longitud ≤ -74.0805  [bajo (80%, n=510)]
+│   │   │   │   │   │   │   ├── distancia_centro_km ≤ 10.855  [bajo (78%, n=464)]
+│   │   │   │   │   │   │   │   ├── distancia_centro_km ≤ 10.08  [bajo (82%, n=434)]
+│   │   │   │   │   │   │   │   │   ├── distancia_centro_km ≤ 1.795  [bajo (55%, n=47)]
+│   │   │   │   │   │   │   │   │   │   ├── distancia_centro_km ≤ 1.22: bajo (96%, n=23)
+│   │   │   │   │   │   │   │   │   │   └── distancia_centro_km > 1.22: medio (83%, n=24)
+│   │   │   │   │   │   │   │   │   └── distancia_centro_km > 1.795  [bajo (86%, n=387)]
+│   │   │   │   │   │   │   │   │       ├── distancia_centro_km ≤ 5.285: bajo (96%, n=167)
+│   │   │   │   │   │   │   │   │       └── distancia_centro_km > 5.285  [bajo (78%, n=220)]
+│   │   │   │   │   │   │   │   │           ├── distancia_centro_km ≤ 7.375  [bajo (54%, n=74)]
+│   │   │   │   │   │   │   │   │           │   ├── latitud ≤ 4.65225: bajo (79%, n=48)
+│   │   │   │   │   │   │   │   │           │   └── latitud > 4.65225: medio (92%, n=26)
+│   │   │   │   │   │   │   │   │           └── distancia_centro_km > 7.375: bajo (90%, n=146)
+│   │   │   │   │   │   │   │   └── distancia_centro_km > 10.08: medio (87%, n=30)
+│   │   │   │   │   │   │   └── distancia_centro_km > 10.855: bajo (100%, n=46)
+│   │   │   │   │   │   └── longitud > -74.0805  [bajo (57%, n=176)]
+│   │   │   │   │   │       ├── longitud ≤ -74.0778: medio (84%, n=32)
+│   │   │   │   │   │       └── longitud > -74.0778  [bajo (70%, n=144)]
+│   │   │   │   │   │           ├── es_integracion = no  [bajo (63%, n=116)]
+│   │   │   │   │   │           │   ├── longitud ≤ -74.072  [bajo (52%, n=89)]
+│   │   │   │   │   │           │   │   ├── longitud ≤ -74.0752: bajo (74%, n=34)
+│   │   │   │   │   │           │   │   └── longitud > -74.0752: medio (62%, n=55)
+│   │   │   │   │   │           │   └── longitud > -74.072: bajo (100%, n=27)
+│   │   │   │   │   │           └── es_integracion = si: bajo (100%, n=28)
+│   │   │   │   │   └── hora > 20.5  [bajo (90%, n=694)]
+│   │   │   │   │       ├── longitud ≤ -74.105: bajo (100%, n=258)
+│   │   │   │   │       └── longitud > -74.105  [bajo (85%, n=436)]
+│   │   │   │   │           ├── distancia_centro_km ≤ 0.785: bajo (56%, n=41)
+│   │   │   │   │           └── distancia_centro_km > 0.785  [bajo (88%, n=395)]
+│   │   │   │   │               ├── longitud ≤ -74.0775  [bajo (84%, n=279)]
+│   │   │   │   │               │   ├── longitud ≤ -74.081: bajo (90%, n=252)
+│   │   │   │   │               │   └── longitud > -74.081: medio (70%, n=27)
+│   │   │   │   │               └── longitud > -74.0775: bajo (98%, n=116)
+│   │   │   │   └── es_portal = si  [medio (58%, n=84)]
+│   │   │   │       ├── hora ≤ 20.5: medio (68%, n=41)
+│   │   │   │       └── hora > 20.5: bajo (51%, n=43)
+│   │   │   └── longitud > -74.07  [medio (52%, n=669)]
+│   │   │       ├── distancia_centro_km ≤ 8.55  [medio (76%, n=327)]
+│   │   │       │   ├── longitud ≤ -74.067  [medio (56%, n=80)]
+│   │   │       │   │   ├── distancia_centro_km ≤ 2.465: medio (80%, n=56)
+│   │   │       │   │   └── distancia_centro_km > 2.465: bajo (100%, n=24)
+│   │   │       │   └── longitud > -74.067  [medio (83%, n=247)]
+│   │   │       │       ├── distancia_centro_km ≤ 7.6: medio (87%, n=191)
+│   │   │       │       └── distancia_centro_km > 7.6  [medio (68%, n=56)]
+│   │   │       │           ├── hora ≤ 20.5: medio (100%, n=30)
+│   │   │       │           └── hora > 20.5: bajo (69%, n=26)
+│   │   │       └── distancia_centro_km > 8.55  [bajo (68%, n=342)]
+│   │   │           ├── es_integracion = no  [bajo (73%, n=317)]
+│   │   │           │   ├── es_portal = no  [bajo (81%, n=287)]
+│   │   │           │   │   ├── hora ≤ 20.5  [bajo (67%, n=143)]
+│   │   │           │   │   │   ├── distancia_centro_km ≤ 10.535: bajo (96%, n=28)
+│   │   │           │   │   │   └── distancia_centro_km > 10.535  [bajo (60%, n=115)]
+│   │   │           │   │   │       ├── distancia_centro_km ≤ 13.495  [medio (63%, n=51)]
+│   │   │           │   │   │       │   ├── distancia_centro_km ≤ 12.165: medio (82%, n=22)
+│   │   │           │   │   │       │   └── distancia_centro_km > 12.165: bajo (52%, n=29)
+│   │   │           │   │   │       └── distancia_centro_km > 13.495  [bajo (78%, n=64)]
+│   │   │           │   │   │           ├── distancia_centro_km ≤ 15.27: bajo (100%, n=38)
+│   │   │           │   │   │           └── distancia_centro_km > 15.27: medio (54%, n=26)
+│   │   │           │   │   └── hora > 20.5: bajo (94%, n=144)
+│   │   │           │   └── es_portal = si: medio (90%, n=30)
+│   │   │           └── es_integracion = si: medio (56%, n=25)
+│   │   └── tipo_dia = sabado  [bajo (84%, n=451)]
+│   │       ├── es_portal = no: bajo (87%, n=428)
+│   │       └── es_portal = si: medio (74%, n=23)
+│   └── hora > 21.5: bajo (98%, n=1565)
+├── franja = pico_am  [bajo (48%, n=4703)]
+│   ├── distancia_centro_km ≤ 9.2  [bajo (61%, n=3295)]
+│   │   ├── tipo_dia = domingo_festivo: bajo (98%, n=599)
+│   │   ├── tipo_dia = habil  [medio (48%, n=2225)]
+│   │   │   ├── longitud ≤ -74.1115  [medio (75%, n=427)]
+│   │   │   │   ├── longitud ≤ -74.143: alto (83%, n=75)
+│   │   │   │   └── longitud > -74.143: medio (88%, n=352)
+│   │   │   └── longitud > -74.1115  [bajo (58%, n=1798)]
+│   │   │       ├── longitud ≤ -74.07  [bajo (69%, n=1262)]
+│   │   │       │   ├── longitud ≤ -74.074  [bajo (63%, n=1066)]
+│   │   │       │   │   ├── latitud ≤ 4.6465  [bajo (76%, n=726)]
+│   │   │       │   │   │   ├── es_integracion = no  [bajo (80%, n=654)]
+│   │   │       │   │   │   │   ├── latitud ≤ 4.6145: bajo (100%, n=159)
+│   │   │       │   │   │   │   └── latitud > 4.6145  [bajo (74%, n=495)]
+│   │   │       │   │   │   │       ├── distancia_centro_km ≤ 4.29  [bajo (68%, n=411)]
+│   │   │       │   │   │   │       │   ├── longitud ≤ -74.0842  [bajo (59%, n=285)]
+│   │   │       │   │   │   │       │   │   ├── longitud ≤ -74.0855: bajo (68%, n=247)
+│   │   │       │   │   │   │       │   │   └── longitud > -74.0855: medio (97%, n=38)
+│   │   │       │   │   │   │       │   └── longitud > -74.0842: bajo (89%, n=126)
+│   │   │       │   │   │   │       └── distancia_centro_km > 4.29: bajo (100%, n=84)
+│   │   │       │   │   │   └── es_integracion = si  [medio (65%, n=72)]
+│   │   │       │   │   │       ├── num_troncales ≤ 2.5: medio (98%, n=41)
+│   │   │       │   │   │       └── num_troncales > 2.5: bajo (77%, n=31)
+│   │   │       │   │   └── latitud > 4.6465  [medio (63%, n=340)]
+│   │   │       │   │       ├── es_integracion = no  [medio (71%, n=302)]
+│   │   │       │   │       │   ├── longitud ≤ -74.0765  [medio (63%, n=238)]
+│   │   │       │   │       │   │   ├── distancia_centro_km ≤ 5.25: medio (96%, n=45)
+│   │   │       │   │       │   │   └── distancia_centro_km > 5.25  [medio (56%, n=193)]
+│   │   │       │   │       │   │       ├── longitud ≤ -74.0845  [medio (70%, n=117)]
+│   │   │       │   │       │   │       │   ├── hora ≤ 6.5: bajo (61%, n=31)
+│   │   │       │   │       │   │       │   └── hora > 6.5: medio (81%, n=86)
+│   │   │       │   │       │   │       └── longitud > -74.0845  [bajo (66%, n=76)]
+│   │   │       │   │       │   │           ├── hora ≤ 7.5  [bajo (55%, n=51)]
+│   │   │       │   │       │   │           │   ├── hora ≤ 6.5: bajo (67%, n=24)
+│   │   │       │   │       │   │           │   └── hora > 6.5: medio (56%, n=27)
+│   │   │       │   │       │   │           └── hora > 7.5: bajo (88%, n=25)
+│   │   │       │   │       │   └── longitud > -74.0765: medio (100%, n=64)
+│   │   │       │   │       └── es_integracion = si: bajo (100%, n=38)
+│   │   │       │   └── longitud > -74.074: bajo (98%, n=196)
+│   │   │       └── longitud > -74.07  [medio (66%, n=536)]
+│   │   │           ├── distancia_centro_km ≤ 7.08  [medio (86%, n=369)]
+│   │   │           │   ├── longitud ≤ -74.067  [medio (61%, n=119)]
+│   │   │           │   │   ├── distancia_centro_km ≤ 2.465: medio (87%, n=83)
+│   │   │           │   │   └── distancia_centro_km > 2.465: bajo (100%, n=36)
+│   │   │           │   └── longitud > -74.067: medio (99%, n=250)
+│   │   │           └── distancia_centro_km > 7.08  [bajo (79%, n=167)]
+│   │   │               ├── hora ≤ 7.5: bajo (98%, n=109)
+│   │   │               └── hora > 7.5  [medio (57%, n=58)]
+│   │   │                   ├── distancia_centro_km ≤ 8.13: medio (87%, n=31)
+│   │   │                   └── distancia_centro_km > 8.13: bajo (78%, n=27)
+│   │   └── tipo_dia = sabado  [bajo (79%, n=471)]
+│   │       ├── longitud ≤ -74.122: medio (52%, n=46)
+│   │       └── longitud > -74.122  [bajo (84%, n=425)]
+│   │           ├── longitud ≤ -74.067: bajo (94%, n=338)
+│   │           └── longitud > -74.067  [medio (55%, n=87)]
+│   │               ├── distancia_centro_km ≤ 7.08: medio (87%, n=55)
+│   │               └── distancia_centro_km > 7.08: bajo (100%, n=32)
+│   └── distancia_centro_km > 9.2  [alto (48%, n=1408)]
+│       ├── tipo_dia = domingo_festivo  [bajo (73%, n=248)]
+│       │   ├── es_portal = no  [bajo (86%, n=210)]
+│       │   │   ├── latitud ≤ 4.68675: medio (61%, n=23)
+│       │   │   └── latitud > 4.68675: bajo (91%, n=187)
+│       │   └── es_portal = si: alto (89%, n=38)
+│       ├── tipo_dia = habil  [alto (61%, n=972)]
+│       │   ├── longitud ≤ -74.121: alto (100%, n=161)
+│       │   └── longitud > -74.121  [alto (54%, n=811)]
+│       │       ├── distancia_centro_km ≤ 10.975  [medio (80%, n=280)]
+│       │       │   ├── es_integracion = no  [medio (89%, n=238)]
+│       │       │   │   ├── distancia_centro_km ≤ 10.24  [medio (81%, n=116)]
+│       │       │   │   │   ├── distancia_centro_km ≤ 9.625: medio (100%, n=42)
+│       │       │   │   │   └── distancia_centro_km > 9.625  [medio (70%, n=74)]
+│       │       │   │   │       ├── hora ≤ 6.5: bajo (52%, n=21)
+│       │       │   │   │       └── hora > 6.5: medio (79%, n=53)
+│       │       │   │   └── distancia_centro_km > 10.24: medio (97%, n=122)
+│       │       │   └── es_integracion = si: alto (71%, n=42)
+│       │       └── distancia_centro_km > 10.975  [alto (76%, n=531)]
+│       │           ├── longitud ≤ -74.1178: medio (75%, n=44)
+│       │           └── longitud > -74.1178  [alto (80%, n=487)]
+│       │               ├── distancia_centro_km ≤ 15.96  [alto (76%, n=404)]
+│       │               │   ├── distancia_centro_km ≤ 15.27  [alto (85%, n=363)]
+│       │               │   │   ├── hora ≤ 7.5: alto (95%, n=236)
+│       │               │   │   └── hora > 7.5  [alto (66%, n=127)]
+│       │               │   │       ├── distancia_centro_km ≤ 11.805: alto (100%, n=26)
+│       │               │   │       └── distancia_centro_km > 11.805  [alto (57%, n=101)]
+│       │               │   │           ├── distancia_centro_km ≤ 12.83: medio (73%, n=44)
+│       │               │   │           └── distancia_centro_km > 12.83: alto (81%, n=57)
+│       │               │   └── distancia_centro_km > 15.27: medio (100%, n=41)
+│       │               └── distancia_centro_km > 15.96: alto (100%, n=83)
+│       └── tipo_dia = sabado  [medio (47%, n=188)]
+│           ├── es_portal = no  [medio (57%, n=155)]
+│           │   ├── distancia_centro_km ≤ 10.975  [bajo (55%, n=60)]
+│           │   │   ├── distancia_centro_km ≤ 9.69: alto (38%, n=21)
+│           │   │   └── distancia_centro_km > 9.69: bajo (69%, n=39)
+│           │   └── distancia_centro_km > 10.975: medio (74%, n=95)
+│           └── es_portal = si: alto (100%, n=33)
+├── franja = pico_pm  [alto (36%, n=6285)]
+│   ├── tipo_dia = domingo_festivo  [bajo (77%, n=1091)]
+│   │   ├── es_portal = no  [bajo (81%, n=1035)]
+│   │   │   ├── es_integracion = no  [bajo (85%, n=939)]
+│   │   │   │   ├── longitud ≤ -74.0645  [bajo (88%, n=726)]
+│   │   │   │   │   ├── longitud ≤ -74.072  [bajo (86%, n=643)]
+│   │   │   │   │   │   ├── distancia_centro_km ≤ 10.465  [bajo (85%, n=573)]
+│   │   │   │   │   │   │   ├── distancia_centro_km ≤ 9.625: bajo (87%, n=548)
+│   │   │   │   │   │   │   └── distancia_centro_km > 9.625: medio (56%, n=25)
+│   │   │   │   │   │   └── distancia_centro_km > 10.465: bajo (100%, n=70)
+│   │   │   │   │   └── longitud > -74.072: bajo (100%, n=83)
+│   │   │   │   └── longitud > -74.0645  [bajo (73%, n=213)]
+│   │   │   │       ├── distancia_centro_km ≤ 7.39: medio (71%, n=38)
+│   │   │   │       └── distancia_centro_km > 7.39  [bajo (82%, n=175)]
+│   │   │   │           ├── distancia_centro_km ≤ 11.355: bajo (100%, n=63)
+│   │   │   │           └── distancia_centro_km > 11.355  [bajo (72%, n=112)]
+│   │   │   │               ├── distancia_centro_km ≤ 13.495: medio (55%, n=44)
+│   │   │   │               └── distancia_centro_km > 13.495: bajo (90%, n=68)
+│   │   │   └── es_integracion = si  [medio (50%, n=96)]
+│   │   │       ├── longitud ≤ -74.072: bajo (64%, n=44)
+│   │   │       └── longitud > -74.072: medio (73%, n=52)
+│   │   └── es_portal = si: alto (77%, n=56)
+│   ├── tipo_dia = habil  [alto (49%, n=4298)]
+│   │   ├── longitud ≤ -74.071  [medio (42%, n=2869)]
+│   │   │   ├── hora ≤ 18.5  [alto (46%, n=2145)]
+│   │   │   │   ├── distancia_centro_km ≤ 7.375  [alto (55%, n=1292)]
+│   │   │   │   │   ├── latitud ≤ 4.64175  [medio (52%, n=962)]
+│   │   │   │   │   │   ├── longitud ≤ -74.09  [medio (72%, n=427)]
+│   │   │   │   │   │   │   ├── distancia_centro_km ≤ 4.59: medio (85%, n=276)
+│   │   │   │   │   │   │   └── distancia_centro_km > 4.59  [medio (48%, n=151)]
+│   │   │   │   │   │   │       ├── distancia_centro_km ≤ 5.75  [alto (72%, n=79)]
+│   │   │   │   │   │   │       │   ├── distancia_centro_km ≤ 4.965: medio (61%, n=36)
+│   │   │   │   │   │   │       │   └── distancia_centro_km > 4.965: alto (100%, n=43)
+│   │   │   │   │   │   │       └── distancia_centro_km > 5.75  [medio (71%, n=72)]
+│   │   │   │   │   │   │           ├── distancia_centro_km ≤ 6.485: bajo (59%, n=34)
+│   │   │   │   │   │   │           └── distancia_centro_km > 6.485: medio (97%, n=38)
+│   │   │   │   │   │   └── longitud > -74.09  [alto (62%, n=535)]
+│   │   │   │   │   │       ├── es_integracion = no  [alto (54%, n=450)]
+│   │   │   │   │   │       │   ├── distancia_centro_km ≤ 2.605  [alto (55%, n=369)]
+│   │   │   │   │   │       │   │   ├── latitud ≤ 4.60425: alto (100%, n=42)
+│   │   │   │   │   │       │   │   └── latitud > 4.60425  [medio (50%, n=327)]
+│   │   │   │   │   │       │   │       ├── longitud ≤ -74.0842  [alto (80%, n=119)]
+│   │   │   │   │   │       │   │       │   ├── distancia_centro_km ≤ 1.29: medio (59%, n=39)
+│   │   │   │   │   │       │   │       │   └── distancia_centro_km > 1.29: alto (99%, n=80)
+│   │   │   │   │   │       │   │       └── longitud > -74.0842  [medio (68%, n=208)]
+│   │   │   │   │   │       │   │           ├── hora ≤ 16.5: medio (94%, n=72)
+│   │   │   │   │   │       │   │           └── hora > 16.5  [medio (54%, n=136)]
+│   │   │   │   │   │       │   │               ├── hora ≤ 17.5: alto (76%, n=67)
+│   │   │   │   │   │       │   │               └── hora > 17.5: medio (83%, n=69)
+│   │   │   │   │   │       │   └── distancia_centro_km > 2.605  [alto (51%, n=81)]
+│   │   │   │   │   │       │       ├── distancia_centro_km ≤ 3.345: medio (62%, n=40)
+│   │   │   │   │   │       │       └── distancia_centro_km > 3.345: alto (100%, n=41)
+│   │   │   │   │   │       └── es_integracion = si: alto (100%, n=85)
+│   │   │   │   │   └── latitud > 4.64175  [alto (92%, n=330)]
+│   │   │   │   │       ├── hora ≤ 17.5: alto (99%, n=220)
+│   │   │   │   │       └── hora > 17.5  [alto (78%, n=110)]
+│   │   │   │   │           ├── latitud ≤ 4.65675  [alto (59%, n=56)]
+│   │   │   │   │           │   ├── longitud ≤ -74.0902: medio (64%, n=33)
+│   │   │   │   │           │   └── longitud > -74.0902: alto (91%, n=23)
+│   │   │   │   │           └── latitud > 4.65675: alto (98%, n=54)
+│   │   │   │   └── distancia_centro_km > 7.375  [medio (41%, n=853)]
+│   │   │   │       ├── es_portal = no  [medio (48%, n=727)]
+│   │   │   │       │   ├── latitud ≤ 4.62775  [bajo (65%, n=118)]
+│   │   │   │       │   │   ├── distancia_centro_km ≤ 7.66: bajo (100%, n=42)
+│   │   │   │       │   │   └── distancia_centro_km > 7.66  [alto (50%, n=76)]
+│   │   │   │       │   │       ├── distancia_centro_km ≤ 8.325: alto (93%, n=41)
+│   │   │   │       │   │       └── distancia_centro_km > 8.325: bajo (100%, n=35)
+│   │   │   │       │   └── latitud > 4.62775  [medio (56%, n=609)]
+│   │   │   │       │       ├── es_integracion = no  [medio (60%, n=569)]
+│   │   │   │       │       │   ├── distancia_centro_km ≤ 12  [medio (66%, n=491)]
+│   │   │   │       │       │   │   ├── hora ≤ 17.5  [medio (71%, n=323)]
+│   │   │   │       │       │   │   │   ├── distancia_centro_km ≤ 10.465  [medio (60%, n=237)]
+│   │   │   │       │       │   │   │   │   ├── longitud ≤ -74.0898  [medio (51%, n=188)]
+│   │   │   │       │       │   │   │   │   │   ├── longitud ≤ -74.095  [medio (60%, n=159)]
+│   │   │   │       │       │   │   │   │   │   │   ├── distancia_centro_km ≤ 8.27: alto (100%, n=23)
+│   │   │   │       │       │   │   │   │   │   │   └── distancia_centro_km > 8.27: medio (70%, n=136)
+│   │   │   │       │       │   │   │   │   │   └── longitud > -74.095: alto (100%, n=29)
+│   │   │   │       │       │   │   │   │   └── longitud > -74.0898: medio (98%, n=49)
+│   │   │   │       │       │   │   │   └── distancia_centro_km > 10.465: medio (100%, n=86)
+│   │   │   │       │       │   │   └── hora > 17.5  [medio (55%, n=168)]
+│   │   │   │       │       │   │       ├── longitud ≤ -74.1025  [medio (78%, n=93)]
+│   │   │   │       │       │   │       │   ├── distancia_centro_km ≤ 9.2: medio (100%, n=36)
+│   │   │   │       │       │   │       │   └── distancia_centro_km > 9.2  [medio (65%, n=57)]
+│   │   │   │       │       │   │       │       ├── longitud ≤ -74.11: bajo (67%, n=30)
+│   │   │   │       │       │   │       │       └── longitud > -74.11: medio (100%, n=27)
+│   │   │   │       │       │   │       └── longitud > -74.1025  [bajo (39%, n=75)]
+│   │   │   │       │       │   │           ├── distancia_centro_km ≤ 9.115: bajo (50%, n=30)
+│   │   │   │       │       │   │           └── distancia_centro_km > 9.115: alto (58%, n=45)
+│   │   │   │       │       │   └── distancia_centro_km > 12  [bajo (73%, n=78)]
+│   │   │   │       │       │       ├── distancia_centro_km ≤ 12.445: medio (52%, n=40)
+│   │   │   │       │       │       └── distancia_centro_km > 12.445: bajo (100%, n=38)
+│   │   │   │       │       └── es_integracion = si: bajo (100%, n=40)
+│   │   │   │       └── es_portal = si: alto (97%, n=126)
+│   │   │   └── hora > 18.5  [medio (47%, n=724)]
+│   │   │       ├── es_portal = no  [bajo (49%, n=683)]
+│   │   │       │   ├── latitud ≤ 4.61125: medio (81%, n=64)
+│   │   │       │   └── latitud > 4.61125  [bajo (54%, n=619)]
+│   │   │       │       ├── distancia_centro_km ≤ 8.015  [medio (53%, n=412)]
+│   │   │       │       │   ├── latitud ≤ 4.64175  [bajo (61%, n=284)]
+│   │   │       │       │   │   ├── latitud ≤ 4.6375  [bajo (63%, n=254)]
+│   │   │       │       │   │   │   ├── longitud ≤ -74.0803  [bajo (57%, n=217)]
+│   │   │       │       │   │   │   │   ├── longitud ≤ -74.0855  [bajo (65%, n=188)]
+│   │   │       │       │   │   │   │   │   ├── latitud ≤ 4.6145: bajo (96%, n=28)
+│   │   │       │       │   │   │   │   │   └── latitud > 4.6145  [bajo (59%, n=160)]
+│   │   │       │       │   │   │   │   │       ├── distancia_centro_km ≤ 5.75  [bajo (50%, n=106)]
+│   │   │       │       │   │   │   │   │       │   ├── distancia_centro_km ≤ 3.96: bajo (72%, n=69)
+│   │   │       │       │   │   │   │   │       │   └── distancia_centro_km > 3.96: medio (92%, n=37)
+│   │   │       │       │   │   │   │   │       └── distancia_centro_km > 5.75  [bajo (78%, n=54)]
+│   │   │       │       │   │   │   │   │           ├── distancia_centro_km ≤ 7.09: bajo (100%, n=31)
+│   │   │       │       │   │   │   │   │           └── distancia_centro_km > 7.09: medio (52%, n=23)
+│   │   │       │       │   │   │   │   └── longitud > -74.0855: medio (97%, n=29)
+│   │   │       │       │   │   │   └── longitud > -74.0803: bajo (100%, n=37)
+│   │   │       │       │   │   └── latitud > 4.6375: bajo (47%, n=30)
+│   │   │       │       │   └── latitud > 4.64175: medio (93%, n=128)
+│   │   │       │       └── distancia_centro_km > 8.015  [bajo (74%, n=207)]
+│   │   │       │           ├── longitud ≤ -74.0898  [bajo (67%, n=162)]
+│   │   │       │           │   ├── longitud ≤ -74.1058: bajo (85%, n=110)
+│   │   │       │           │   └── longitud > -74.1058: medio (71%, n=52)
+│   │   │       │           └── longitud > -74.0898: bajo (100%, n=45)
+│   │   │       └── es_portal = si: alto (63%, n=41)
+│   │   └── longitud > -74.071  [alto (74%, n=1429)]
+│   │       ├── hora ≤ 18.5  [alto (83%, n=1079)]
+│   │       │   ├── distancia_centro_km ≤ 13.495  [alto (92%, n=843)]
+│   │       │   │   ├── longitud ≤ -74.067  [alto (76%, n=169)]
+│   │       │   │   │   ├── longitud ≤ -74.0677: alto (95%, n=128)
+│   │       │   │   │   └── longitud > -74.0677: medio (83%, n=41)
+│   │       │   │   └── longitud > -74.067: alto (97%, n=674)
+│   │       │   └── distancia_centro_km > 13.495  [alto (51%, n=236)]
+│   │       │       ├── distancia_centro_km ≤ 15.96  [medio (75%, n=154)]
+│   │       │       │   ├── hora ≤ 17.5  [medio (59%, n=94)]
+│   │       │       │   │   ├── distancia_centro_km ≤ 14.05: alto (100%, n=20)
+│   │       │       │   │   └── distancia_centro_km > 14.05  [medio (74%, n=74)]
+│   │       │       │   │       ├── distancia_centro_km ≤ 14.55: medio (100%, n=28)
+│   │       │       │   │       └── distancia_centro_km > 14.55  [medio (59%, n=46)]
+│   │       │       │   │           ├── distancia_centro_km ≤ 15.27: alto (86%, n=22)
+│   │       │       │   │           └── distancia_centro_km > 15.27: medio (100%, n=24)
+│   │       │       │   └── hora > 17.5: medio (100%, n=60)
+│   │       │       └── distancia_centro_km > 15.96: alto (100%, n=82)
+│   │       └── hora > 18.5  [medio (46%, n=350)]
+│   │           ├── es_integracion = no  [medio (52%, n=302)]
+│   │           │   ├── longitud ≤ -74.0645: medio (76%, n=72)
+│   │           │   └── longitud > -74.0645  [alto (47%, n=230)]
+│   │           │       ├── distancia_centro_km ≤ 8.55: alto (96%, n=70)
+│   │           │       └── distancia_centro_km > 8.55  [medio (61%, n=160)]
+│   │           │           ├── distancia_centro_km ≤ 14.05  [medio (70%, n=92)]
+│   │           │           │   ├── distancia_centro_km ≤ 10.535: medio (100%, n=24)
+│   │           │           │   └── distancia_centro_km > 10.535  [medio (59%, n=68)]
+│   │           │           │       ├── distancia_centro_km ≤ 12.165: alto (60%, n=25)
+│   │           │           │       └── distancia_centro_km > 12.165: medio (70%, n=43)
+│   │           │           └── distancia_centro_km > 14.05  [medio (50%, n=68)]
+│   │           │               ├── distancia_centro_km ≤ 15.96: bajo (50%, n=40)
+│   │           │               └── distancia_centro_km > 15.96: medio (50%, n=28)
+│   │           └── es_integracion = si: alto (90%, n=48)
+│   └── tipo_dia = sabado  [medio (45%, n=896)]
+│       ├── es_portal = no  [medio (47%, n=854)]
+│       │   ├── longitud ≤ -74.093  [bajo (74%, n=321)]
+│       │   │   ├── distancia_centro_km ≤ 5.285: bajo (98%, n=89)
+│       │   │   └── distancia_centro_km > 5.285  [bajo (65%, n=232)]
+│       │   │       ├── longitud ≤ -74.1145: bajo (78%, n=148)
+│       │   │       └── longitud > -74.1145  [medio (58%, n=84)]
+│       │   │           ├── hora ≤ 18.5: medio (69%, n=61)
+│       │   │           └── hora > 18.5: bajo (70%, n=23)
+│       │   └── longitud > -74.093  [medio (60%, n=533)]
+│       │       ├── num_troncales ≤ 1.5  [medio (63%, n=479)]
+│       │       │   ├── longitud ≤ -74.0627  [medio (60%, n=315)]
+│       │       │   │   ├── distancia_centro_km ≤ 7.45  [medio (68%, n=259)]
+│       │       │   │   │   ├── latitud ≤ 4.63175  [medio (55%, n=161)]
+│       │       │   │   │   │   ├── latitud ≤ 4.61575: medio (84%, n=70)
+│       │       │   │   │   │   └── latitud > 4.61575  [bajo (67%, n=91)]
+│       │       │   │   │   │       ├── distancia_centro_km ≤ 2.605  [bajo (53%, n=55)]
+│       │       │   │   │   │       │   ├── longitud ≤ -74.0803: medio (71%, n=24)
+│       │       │   │   │   │       │   └── longitud > -74.0803: bajo (71%, n=31)
+│       │       │   │   │   │       └── distancia_centro_km > 2.605: bajo (89%, n=36)
+│       │       │   │   │   └── latitud > 4.63175: medio (90%, n=98)
+│       │       │   │   └── distancia_centro_km > 7.45  [bajo (80%, n=56)]
+│       │       │   │       ├── distancia_centro_km ≤ 8.8: bajo (100%, n=35)
+│       │       │   │       └── distancia_centro_km > 8.8: medio (52%, n=21)
+│       │       │   └── longitud > -74.0627  [medio (69%, n=164)]
+│       │       │       ├── distancia_centro_km ≤ 7.39: alto (71%, n=21)
+│       │       │       └── distancia_centro_km > 7.39: medio (75%, n=143)
+│       │       └── num_troncales > 1.5  [alto (48%, n=54)]
+│       │           ├── distancia_centro_km ≤ 4.38: alto (76%, n=25)
+│       │           └── distancia_centro_km > 4.38: medio (45%, n=29)
+│       └── es_portal = si: alto (88%, n=42)
+└── franja = valle  [medio (45%, n=10924)]
+    ├── es_portal = no  [medio (47%, n=10386)]
+    │   ├── tipo_dia = domingo_festivo  [bajo (83%, n=1876)]
+    │   │   ├── longitud ≤ -74.143  [medio (46%, n=81)]
+    │   │   │   ├── distancia_centro_km ≤ 8.325: medio (55%, n=29)
+    │   │   │   └── distancia_centro_km > 8.325  [bajo (60%, n=52)]
+    │   │   │       ├── hora ≤ 11.5: medio (67%, n=24)
+    │   │   │       └── hora > 11.5: bajo (82%, n=28)
+    │   │   └── longitud > -74.143  [bajo (85%, n=1795)]
+    │   │       ├── latitud ≤ 4.606  [bajo (44%, n=96)]
+    │   │       │   ├── hora ≤ 11.5: bajo (66%, n=41)
+    │   │       │   └── hora > 11.5  [medio (49%, n=55)]
+    │   │       │       ├── latitud ≤ 4.60325: medio (68%, n=28)
+    │   │       │       └── latitud > 4.60325: alto (41%, n=27)
+    │   │       └── latitud > 4.606  [bajo (87%, n=1699)]
+    │   │           ├── longitud ≤ -74.0667  [bajo (92%, n=1214)]
+    │   │           │   ├── distancia_centro_km ≤ 10.08  [bajo (94%, n=1058)]
+    │   │           │   │   ├── distancia_centro_km ≤ 2.075  [bajo (82%, n=217)]
+    │   │           │   │   │   ├── longitud ≤ -74.079  [bajo (72%, n=141)]
+    │   │           │   │   │   │   ├── hora ≤ 11.5: bajo (91%, n=66)
+    │   │           │   │   │   │   └── hora > 11.5  [bajo (56%, n=75)]
+    │   │           │   │   │   │       ├── latitud ≤ 4.6135: bajo (64%, n=50)
+    │   │           │   │   │   │       └── latitud > 4.6135: medio (60%, n=25)
+    │   │           │   │   │   └── longitud > -74.079: bajo (100%, n=76)
+    │   │           │   │   └── distancia_centro_km > 2.075: bajo (97%, n=841)
+    │   │           │   └── distancia_centro_km > 10.08  [bajo (78%, n=156)]
+    │   │           │       ├── distancia_centro_km ≤ 12  [bajo (67%, n=104)]
+    │   │           │       │   ├── distancia_centro_km ≤ 10.855: bajo (78%, n=50)
+    │   │           │       │   └── distancia_centro_km > 10.855  [bajo (57%, n=54)]
+    │   │           │       │       ├── distancia_centro_km ≤ 11.425: medio (66%, n=29)
+    │   │           │       │       └── distancia_centro_km > 11.425: bajo (84%, n=25)
+    │   │           │       └── distancia_centro_km > 12: bajo (100%, n=52)
+    │   │           └── longitud > -74.0667  [bajo (74%, n=485)]
+    │   │               ├── distancia_centro_km ≤ 15.96  [bajo (78%, n=458)]
+    │   │               │   ├── distancia_centro_km ≤ 7.08  [bajo (50%, n=112)]
+    │   │               │   │   ├── distancia_centro_km ≤ 4.255: bajo (73%, n=48)
+    │   │               │   │   └── distancia_centro_km > 4.255  [medio (67%, n=64)]
+    │   │               │   │       ├── hora ≤ 11.5: bajo (67%, n=21)
+    │   │               │   │       └── hora > 11.5: medio (84%, n=43)
+    │   │               │   └── distancia_centro_km > 7.08  [bajo (87%, n=346)]
+    │   │               │       ├── distancia_centro_km ≤ 9.13: bajo (99%, n=106)
+    │   │               │       └── distancia_centro_km > 9.13  [bajo (82%, n=240)]
+    │   │               │           ├── es_integracion = no  [bajo (88%, n=216)]
+    │   │               │           │   ├── distancia_centro_km ≤ 11.355: bajo (100%, n=48)
+    │   │               │           │   └── distancia_centro_km > 11.355  [bajo (85%, n=168)]
+    │   │               │           │       ├── distancia_centro_km ≤ 13.495  [bajo (73%, n=71)]
+    │   │               │           │       │   ├── distancia_centro_km ≤ 12.83: bajo (92%, n=48)
+    │   │               │           │       │   └── distancia_centro_km > 12.83: medio (65%, n=23)
+    │   │               │           │       └── distancia_centro_km > 13.495: bajo (94%, n=97)
+    │   │               │           └── es_integracion = si: medio (75%, n=24)
+    │   │               └── distancia_centro_km > 15.96: medio (89%, n=27)
+    │   ├── tipo_dia = habil  [medio (54%, n=7010)]
+    │   │   ├── longitud ≤ -74.07  [medio (55%, n=4807)]
+    │   │   │   ├── latitud ≤ 4.62775  [bajo (46%, n=2141)]
+    │   │   │   │   ├── es_integracion = no  [bajo (50%, n=1947)]
+    │   │   │   │   │   ├── distancia_centro_km ≤ 7.66  [bajo (52%, n=1764)]
+    │   │   │   │   │   │   ├── latitud ≤ 4.62475  [medio (49%, n=1461)]
+    │   │   │   │   │   │   │   ├── latitud ≤ 4.62  [bajo (54%, n=1089)]
+    │   │   │   │   │   │   │   │   ├── distancia_centro_km ≤ 1.665  [medio (61%, n=549)]
+    │   │   │   │   │   │   │   │   │   ├── latitud ≤ 4.61575  [medio (72%, n=456)]
+    │   │   │   │   │   │   │   │   │   │   ├── hora ≤ 10.5  [bajo (71%, n=124)]
+    │   │   │   │   │   │   │   │   │   │   │   ├── distancia_centro_km ≤ 1.3: bajo (84%, n=100)
+    │   │   │   │   │   │   │   │   │   │   │   └── distancia_centro_km > 1.3: medio (83%, n=24)
+    │   │   │   │   │   │   │   │   │   │   └── hora > 10.5: medio (88%, n=332)
+    │   │   │   │   │   │   │   │   │   └── latitud > 4.61575: bajo (92%, n=93)
+    │   │   │   │   │   │   │   │   └── distancia_centro_km > 1.665  [bajo (74%, n=540)]
+    │   │   │   │   │   │   │   │       ├── distancia_centro_km ≤ 4.26  [bajo (87%, n=454)]
+    │   │   │   │   │   │   │   │       │   ├── distancia_centro_km ≤ 2.93  [bajo (78%, n=264)]
+    │   │   │   │   │   │   │   │       │   │   ├── hora ≤ 12.5: bajo (95%, n=152)
+    │   │   │   │   │   │   │   │       │   │   └── hora > 12.5  [bajo (54%, n=112)]
+    │   │   │   │   │   │   │   │       │   │       ├── latitud ≤ 4.613: bajo (89%, n=38)
+    │   │   │   │   │   │   │   │       │   │       └── latitud > 4.613: medio (65%, n=74)
+    │   │   │   │   │   │   │   │       │   └── distancia_centro_km > 2.93: bajo (99%, n=190)
+    │   │   │   │   │   │   │   │       └── distancia_centro_km > 4.26: medio (92%, n=86)
+    │   │   │   │   │   │   │   └── latitud > 4.62  [medio (66%, n=372)]
+    │   │   │   │   │   │   │       ├── distancia_centro_km ≤ 5.75  [medio (73%, n=183)]
+    │   │   │   │   │   │   │       │   ├── distancia_centro_km ≤ 3.67: medio (100%, n=96)
+    │   │   │   │   │   │   │       │   └── distancia_centro_km > 3.67  [alto (56%, n=87)]
+    │   │   │   │   │   │   │       │       ├── hora ≤ 12.5  [alto (63%, n=49)]
+    │   │   │   │   │   │   │       │       │   ├── hora ≤ 10.5: medio (56%, n=25)
+    │   │   │   │   │   │   │       │       │   └── hora > 10.5: alto (83%, n=24)
+    │   │   │   │   │   │   │       │       └── hora > 12.5: medio (53%, n=38)
+    │   │   │   │   │   │   │       └── distancia_centro_km > 5.75  [medio (59%, n=189)]
+    │   │   │   │   │   │   │           ├── hora ≤ 10.5: medio (100%, n=54)
+    │   │   │   │   │   │   │           └── hora > 10.5  [bajo (58%, n=135)]
+    │   │   │   │   │   │   │               ├── distancia_centro_km ≤ 6.485: bajo (89%, n=64)
+    │   │   │   │   │   │   │               └── distancia_centro_km > 6.485  [medio (70%, n=71)]
+    │   │   │   │   │   │   │                   ├── hora ≤ 12.5: medio (93%, n=28)
+    │   │   │   │   │   │   │                   └── hora > 12.5  [medio (56%, n=43)]
+    │   │   │   │   │   │   │                       ├── lluvia = no: bajo (50%, n=22)
+    │   │   │   │   │   │   │                       └── lluvia = si: medio (62%, n=21)
+    │   │   │   │   │   │   └── latitud > 4.62475  [bajo (83%, n=303)]
+    │   │   │   │   │   │       ├── distancia_centro_km ≤ 2.605  [medio (53%, n=100)]
+    │   │   │   │   │   │       │   ├── hora ≤ 11.5: bajo (98%, n=42)
+    │   │   │   │   │   │       │   └── hora > 11.5: medio (90%, n=58)
+    │   │   │   │   │   │       └── distancia_centro_km > 2.605: bajo (100%, n=203)
+    │   │   │   │   │   └── distancia_centro_km > 7.66  [alto (50%, n=183)]
+    │   │   │   │   │       ├── distancia_centro_km ≤ 8.325: alto (99%, n=93)
+    │   │   │   │   │       └── distancia_centro_km > 8.325  [bajo (63%, n=90)]
+    │   │   │   │   │           ├── hora ≤ 11.5: medio (87%, n=38)
+    │   │   │   │   │           └── hora > 11.5: bajo (100%, n=52)
+    │   │   │   │   └── es_integracion = si  [alto (54%, n=194)]
+    │   │   │   │       ├── hora ≤ 13.5  [medio (63%, n=136)]
+    │   │   │   │       │   ├── num_troncales ≤ 2.5: medio (100%, n=70)
+    │   │   │   │       │   └── num_troncales > 2.5  [alto (76%, n=66)]
+    │   │   │   │       │       ├── hora ≤ 10.5: medio (59%, n=27)
+    │   │   │   │       │       └── hora > 10.5: alto (100%, n=39)
+    │   │   │   │       └── hora > 13.5: alto (95%, n=58)
+    │   │   │   └── latitud > 4.62775  [medio (65%, n=2666)]
+    │   │   │       ├── latitud ≤ 4.6675  [medio (79%, n=1287)]
+    │   │   │       │   ├── distancia_centro_km ≤ 5.71  [medio (66%, n=633)]
+    │   │   │       │   │   ├── longitud ≤ -74.093  [bajo (65%, n=270)]
+    │   │   │       │   │   │   ├── hora ≤ 11.5: bajo (92%, n=117)
+    │   │   │       │   │   │   └── hora > 11.5  [medio (56%, n=153)]
+    │   │   │       │   │   │       ├── distancia_centro_km ≤ 4.91  [bajo (58%, n=100)]
+    │   │   │       │   │   │       │   ├── distancia_centro_km ≤ 4.29: medio (85%, n=46)
+    │   │   │       │   │   │       │   └── distancia_centro_km > 4.29: bajo (94%, n=54)
+    │   │   │       │   │   │       └── distancia_centro_km > 4.91: medio (83%, n=53)
+    │   │   │       │   │   └── longitud > -74.093: medio (89%, n=363)
+    │   │   │       │   └── distancia_centro_km > 5.71  [medio (92%, n=654)]
+    │   │   │       │       ├── hora ≤ 14.5  [medio (94%, n=566)]
+    │   │   │       │       │   ├── distancia_centro_km ≤ 8.64: medio (97%, n=477)
+    │   │   │       │       │   └── distancia_centro_km > 8.64  [medio (82%, n=89)]
+    │   │   │       │       │       ├── hora ≤ 10.5: alto (52%, n=31)
+    │   │   │       │       │       └── hora > 10.5: medio (100%, n=58)
+    │   │   │       │       └── hora > 14.5  [medio (80%, n=88)]
+    │   │   │       │           ├── longitud ≤ -74.091: medio (94%, n=62)
+    │   │   │       │           └── longitud > -74.091: alto (54%, n=26)
+    │   │   │       └── latitud > 4.6675  [medio (52%, n=1379)]
+    │   │   │           ├── longitud ≤ -74.0898  [medio (69%, n=898)]
+    │   │   │           │   ├── distancia_centro_km ≤ 12.445  [medio (77%, n=803)]
+    │   │   │           │   │   ├── distancia_centro_km ≤ 10.08  [medio (59%, n=348)]
+    │   │   │           │   │   │   ├── distancia_centro_km ≤ 9.625  [medio (79%, n=259)]
+    │   │   │           │   │   │   │   ├── longitud ≤ -74.1202  [bajo (56%, n=86)]
+    │   │   │           │   │   │   │   │   ├── hora ≤ 10.5: medio (69%, n=29)
+    │   │   │           │   │   │   │   │   └── hora > 10.5: bajo (68%, n=57)
+    │   │   │           │   │   │   │   └── longitud > -74.1202: medio (97%, n=173)
+    │   │   │           │   │   │   └── distancia_centro_km > 9.625: bajo (100%, n=89)
+    │   │   │           │   │   └── distancia_centro_km > 10.08  [medio (91%, n=455)]
+    │   │   │           │   │       ├── hora ≤ 13.5: medio (99%, n=316)
+    │   │   │           │   │       └── hora > 13.5  [medio (71%, n=139)]
+    │   │   │           │   │           ├── distancia_centro_km ≤ 11.425: medio (96%, n=83)
+    │   │   │           │   │           └── distancia_centro_km > 11.425: bajo (66%, n=56)
+    │   │   │           │   └── distancia_centro_km > 12.445: bajo (99%, n=95)
+    │   │   │           └── longitud > -74.0898  [bajo (78%, n=481)]
+    │   │   │               ├── distancia_centro_km ≤ 7.86  [medio (53%, n=198)]
+    │   │   │               │   ├── hora ≤ 12.5  [bajo (76%, n=119)]
+    │   │   │               │   │   ├── distancia_centro_km ≤ 7.45: bajo (97%, n=59)
+    │   │   │               │   │   └── distancia_centro_km > 7.45  [bajo (55%, n=60)]
+    │   │   │               │   │       ├── hora ≤ 10.5: bajo (87%, n=30)
+    │   │   │               │   │       └── hora > 10.5: medio (77%, n=30)
+    │   │   │               │   └── hora > 12.5: medio (95%, n=79)
+    │   │   │               └── distancia_centro_km > 7.86: bajo (100%, n=283)
+    │   │   └── longitud > -74.07  [medio (52%, n=2203)]
+    │   │       ├── distancia_centro_km ≤ 15.27  [medio (55%, n=2029)]
+    │   │       │   ├── distancia_centro_km ≤ 13.495  [medio (48%, n=1737)]
+    │   │       │   │   ├── hora ≤ 11.5  [medio (64%, n=748)]
+    │   │       │   │   │   ├── longitud ≤ -74.0627  [medio (62%, n=328)]
+    │   │       │   │   │   │   ├── distancia_centro_km ≤ 6.67  [medio (71%, n=286)]
+    │   │       │   │   │   │   │   ├── distancia_centro_km ≤ 3.075  [medio (84%, n=158)]
+    │   │       │   │   │   │   │   │   ├── distancia_centro_km ≤ 2.465: medio (99%, n=124)
+    │   │       │   │   │   │   │   │   └── distancia_centro_km > 2.465: bajo (71%, n=34)
+    │   │       │   │   │   │   │   └── distancia_centro_km > 3.075  [medio (55%, n=128)]
+    │   │       │   │   │   │   │       ├── hora ≤ 10.5  [medio (71%, n=85)]
+    │   │       │   │   │   │   │       │   ├── distancia_centro_km ≤ 4.255  [medio (60%, n=62)]
+    │   │       │   │   │   │   │       │   │   ├── distancia_centro_km ≤ 3.64: medio (97%, n=30)
+    │   │       │   │   │   │   │       │   │   └── distancia_centro_km > 3.64: alto (75%, n=32)
+    │   │       │   │   │   │   │       │   └── distancia_centro_km > 4.255: medio (100%, n=23)
+    │   │       │   │   │   │   │       └── hora > 10.5: alto (77%, n=43)
+    │   │       │   │   │   │   └── distancia_centro_km > 6.67: bajo (100%, n=42)
+    │   │       │   │   │   └── longitud > -74.0627  [medio (66%, n=420)]
+    │   │       │   │   │       ├── distancia_centro_km ≤ 7.08: alto (85%, n=74)
+    │   │       │   │   │       └── distancia_centro_km > 7.08  [medio (77%, n=346)]
+    │   │       │   │   │           ├── distancia_centro_km ≤ 8.93: medio (100%, n=116)
+    │   │       │   │   │           └── distancia_centro_km > 8.93  [medio (66%, n=230)]
+    │   │       │   │   │               ├── es_integracion = no  [medio (79%, n=191)]
+    │   │       │   │   │               │   ├── distancia_centro_km ≤ 12.83: medio (93%, n=155)
+    │   │       │   │   │               │   └── distancia_centro_km > 12.83: alto (81%, n=36)
+    │   │       │   │   │               └── es_integracion = si: alto (100%, n=39)
+    │   │       │   │   └── hora > 11.5  [alto (62%, n=989)]
+    │   │       │   │       ├── distancia_centro_km ≤ 7.6  [alto (78%, n=516)]
+    │   │       │   │       │   ├── distancia_centro_km ≤ 3.075  [alto (50%, n=211)]
+    │   │       │   │       │   │   ├── es_integracion = no  [medio (82%, n=104)]
+    │   │       │   │       │   │   │   ├── distancia_centro_km ≤ 2.465  [medio (66%, n=50)]
+    │   │       │   │       │   │   │   │   ├── hora ≤ 13.5: medio (85%, n=26)
+    │   │       │   │       │   │   │   │   └── hora > 13.5: alto (54%, n=24)
+    │   │       │   │       │   │   │   └── distancia_centro_km > 2.465: medio (96%, n=54)
+    │   │       │   │       │   │   └── es_integracion = si: alto (82%, n=107)
+    │   │       │   │       │   └── distancia_centro_km > 3.075: alto (98%, n=305)
+    │   │       │   │       └── distancia_centro_km > 7.6  [medio (52%, n=473)]
+    │   │       │   │           ├── longitud ≤ -74.0603  [medio (57%, n=49)]
+    │   │       │   │           │   ├── hora ≤ 13.5: bajo (80%, n=25)
+    │   │       │   │           │   └── hora > 13.5: medio (96%, n=24)
+    │   │       │   │           └── longitud > -74.0603  [medio (52%, n=424)]
+    │   │       │   │               ├── es_integracion = no  [medio (59%, n=375)]
+    │   │       │   │               │   ├── distancia_centro_km ≤ 12.83  [medio (68%, n=312)]
+    │   │       │   │               │   │   ├── hora ≤ 14.5  [medio (82%, n=233)]
+    │   │       │   │               │   │   │   ├── distancia_centro_km ≤ 11.355: medio (98%, n=158)
+    │   │       │   │               │   │   │   └── distancia_centro_km > 11.355  [alto (52%, n=75)]
+    │   │       │   │               │   │   │       ├── distancia_centro_km ≤ 12.165: alto (93%, n=42)
+    │   │       │   │               │   │   │       └── distancia_centro_km > 12.165: medio (100%, n=33)
+    │   │       │   │               │   │   └── hora > 14.5  [alto (72%, n=79)]
+    │   │       │   │               │   │       ├── distancia_centro_km ≤ 9.27: alto (100%, n=24)
+    │   │       │   │               │   │       └── distancia_centro_km > 9.27  [alto (60%, n=55)]
+    │   │       │   │               │   │           ├── distancia_centro_km ≤ 11.355: alto (76%, n=25)
+    │   │       │   │               │   │           └── distancia_centro_km > 11.355: medio (53%, n=30)
+    │   │       │   │               │   └── distancia_centro_km > 12.83: alto (89%, n=63)
+    │   │       │   │               └── es_integracion = si: alto (100%, n=49)
+    │   │       │   └── distancia_centro_km > 13.495: medio (95%, n=292)
+    │   │       └── distancia_centro_km > 15.27  [bajo (44%, n=174)]
+    │   │           ├── distancia_centro_km ≤ 15.96: bajo (87%, n=87)
+    │   │           └── distancia_centro_km > 15.96: alto (87%, n=87)
+    │   └── tipo_dia = sabado  [medio (54%, n=1500)]
+    │       ├── longitud ≤ -74.067  [medio (48%, n=1092)]
+    │       │   ├── latitud ≤ 4.62975  [bajo (44%, n=534)]
+    │       │   │   ├── es_integracion = no  [bajo (50%, n=474)]
+    │       │   │   │   ├── distancia_centro_km ≤ 7.66  [bajo (55%, n=411)]
+    │       │   │   │   │   ├── longitud ≤ -74.0855  [bajo (65%, n=220)]
+    │       │   │   │   │   │   ├── latitud ≤ 4.62475  [bajo (58%, n=182)]
+    │       │   │   │   │   │   │   ├── distancia_centro_km ≤ 4.26  [bajo (74%, n=101)]
+    │       │   │   │   │   │   │   │   ├── distancia_centro_km ≤ 1.795: medio (64%, n=22)
+    │       │   │   │   │   │   │   │   └── distancia_centro_km > 1.795: bajo (91%, n=79)
+    │       │   │   │   │   │   │   └── distancia_centro_km > 4.26  [medio (52%, n=81)]
+    │       │   │   │   │   │   │       ├── distancia_centro_km ≤ 5.75: medio (68%, n=41)
+    │       │   │   │   │   │   │       └── distancia_centro_km > 5.75: bajo (65%, n=40)
+    │       │   │   │   │   │   └── latitud > 4.62475: bajo (100%, n=38)
+    │       │   │   │   │   └── longitud > -74.0855  [medio (56%, n=191)]
+    │       │   │   │   │       ├── hora ≤ 10.5: bajo (91%, n=46)
+    │       │   │   │   │       └── hora > 10.5  [medio (71%, n=145)]
+    │       │   │   │   │           ├── distancia_centro_km ≤ 0.98: medio (100%, n=41)
+    │       │   │   │   │           └── distancia_centro_km > 0.98  [medio (60%, n=104)]
+    │       │   │   │   │               ├── longitud ≤ -74.0803: medio (84%, n=32)
+    │       │   │   │   │               └── longitud > -74.0803  [bajo (51%, n=72)]
+    │       │   │   │   │                   ├── distancia_centro_km ≤ 1.93: bajo (60%, n=43)
+    │       │   │   │   │                   └── distancia_centro_km > 1.93: medio (62%, n=29)
+    │       │   │   │   └── distancia_centro_km > 7.66  [medio (43%, n=63)]
+    │       │   │   │       ├── distancia_centro_km ≤ 8.325: alto (100%, n=24)
+    │       │   │   │       └── distancia_centro_km > 8.325: medio (69%, n=39)
+    │       │   │   └── es_integracion = si  [alto (57%, n=60)]
+    │       │   │       ├── hora ≤ 11.5: medio (85%, n=26)
+    │       │   │       └── hora > 11.5: alto (88%, n=34)
+    │       │   └── latitud > 4.62975  [medio (54%, n=558)]
+    │       │       ├── es_integracion = no  [medio (57%, n=538)]
+    │       │       │   ├── longitud ≤ -74.081  [bajo (52%, n=398)]
+    │       │       │   │   ├── longitud ≤ -74.1068  [medio (70%, n=175)]
+    │       │       │   │   │   ├── longitud ≤ -74.1192: bajo (84%, n=38)
+    │       │       │   │   │   └── longitud > -74.1192: medio (85%, n=137)
+    │       │       │   │   └── longitud > -74.1068  [bajo (69%, n=223)]
+    │       │       │   │       ├── distancia_centro_km ≤ 9.115: bajo (88%, n=146)
+    │       │       │   │       └── distancia_centro_km > 9.115  [medio (66%, n=77)]
+    │       │       │   │           ├── distancia_centro_km ≤ 10.08: bajo (55%, n=38)
+    │       │       │   │           └── distancia_centro_km > 10.08: medio (87%, n=39)
+    │       │       │   └── longitud > -74.081  [medio (81%, n=140)]
+    │       │       │       ├── hora ≤ 10.5  [medio (54%, n=41)]
+    │       │       │       │   ├── distancia_centro_km ≤ 5.755: medio (60%, n=20)
+    │       │       │       │   └── distancia_centro_km > 5.755: bajo (52%, n=21)
+    │       │       │       └── hora > 10.5: medio (92%, n=99)
+    │       │       └── es_integracion = si: bajo (100%, n=20)
+    │       └── longitud > -74.067  [medio (69%, n=408)]
+    │           ├── distancia_centro_km ≤ 15.27  [medio (73%, n=372)]
+    │           │   ├── distancia_centro_km ≤ 13.495  [medio (68%, n=311)]
+    │           │   │   ├── hora ≤ 10.5  [medio (80%, n=91)]
+    │           │   │   │   ├── distancia_centro_km ≤ 7.08: medio (97%, n=35)
+    │           │   │   │   └── distancia_centro_km > 7.08  [medio (70%, n=56)]
+    │           │   │   │       ├── distancia_centro_km ≤ 9.85: bajo (42%, n=26)
+    │           │   │   │       └── distancia_centro_km > 9.85: medio (97%, n=30)
+    │           │   │   └── hora > 10.5  [medio (63%, n=220)]
+    │           │   │       ├── distancia_centro_km ≤ 7.08  [alto (51%, n=78)]
+    │           │   │       │   ├── distancia_centro_km ≤ 5.24  [medio (68%, n=53)]
+    │           │   │       │   │   ├── hora ≤ 13.5: alto (53%, n=32)
+    │           │   │       │   │   └── hora > 13.5: medio (100%, n=21)
+    │           │   │       │   └── distancia_centro_km > 5.24: alto (92%, n=25)
+    │           │   │       └── distancia_centro_km > 7.08: medio (70%, n=142)
+    │           │   └── distancia_centro_km > 13.495: medio (98%, n=61)
+    │           └── distancia_centro_km > 15.27: bajo (42%, n=36)
+    └── es_portal = si: alto (100%, n=538)
