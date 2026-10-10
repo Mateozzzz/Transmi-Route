@@ -13,15 +13,15 @@ Proyecto de Inteligencia Artificial sobre el sistema de transporte masivo de Bog
 Inteligencia Artificial · Ingeniería de Software · Corporación Universitaria Iberoamericana.
 
 - **Integrante:** Mateo Henao Correa (trabajo individual)
-- **Repositorio:** https://github.com/Mateozzzz/Busqueda-y-sistemas-basados-en-reglas
+- **Repositorio:** https://github.com/Mateozzzz/Transmi-Route.git
 
 ## Inicio rápido
 
 Requisitos: **Python 3.8 o superior** y la librería **rich**, que se instala con `requirements.txt`.
 
 ```bash
-git clone https://github.com/Mateozzzz/Busqueda-y-sistemas-basados-en-reglas.git
-cd Busqueda-y-sistemas-basados-en-reglas
+git clone https://github.com/Mateozzzz/Transmi-Route.git
+cd Transmi-Route
 pip install -r requirements.txt                       # rich: colores y formato de la consola
 python main.py                                        # menú interactivo con las tres actividades
 python main.py ruta "Portal El Dorado" "Museo del Oro"
